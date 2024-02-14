@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify the directory containing the files
-directory="input"
+directory="/tmp/input"
 
 # Check if the directory exists
 if [ ! -d "$directory" ]; then
@@ -16,7 +16,7 @@ for file in "$directory"/*.sh; do
 
     echo "Processing file: $file_name"
 
-    termtosvg -t window_frame_js -g 80x14 -D 10000 -c "${file} -n 100" output/${file_name%.*}.svg
+    termtosvg -t /tmp/template.svg -g 80x14 -c "${file} -n 100" "/tmp/output/${file_name%.*}.svg"
   fi
 done
 

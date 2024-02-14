@@ -14,6 +14,8 @@ clear
 # put your stuff here
 pe "mkdir repo"
 
+pe "cd repo"
+
 pe "git init"
 
 pe "find ."

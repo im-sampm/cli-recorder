@@ -59,6 +59,9 @@
                 font-style: normal;
                 font-size: 14px;
             }
+            #screen_view {
+                animation-iteration-count:1;
+            }
         </style>
         <rect id="slider_wide_track" height="30px" width="65%"/>
         <rect id="slider_track" height="6px" width="65%"/>
@@ -78,7 +81,7 @@
     <circle cx="44" cy="23" r="7" class="color3"/>
     <circle cx="64" cy="23" r="7" class="color2"/>
     <svg id="screen" width="640" height="238" x="23" y="50" viewBox="0 0 640 238" preserveAspectRatio="xMidYMin slice">
-        <rect class="background" height="100%" width="100%" x="0" y="0"/><defs><g id="g1"><text x="0" textLength="8" class="background"> </text></g><g id="g2"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="8" class="background"> </text></g><g id="g3"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="8" font-weight="bold" class="foreground">l</text><text x="64" textLength="8" class="background"> </text></g><g id="g4"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="16" font-weight="bold" class="foreground">ls</text><text x="72" textLength="8" class="background"> </text></g><g id="g5"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="24" font-weight="bold" class="foreground">ls </text><text x="80" textLength="8" class="background"> </text></g><g id="g6"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="32" font-weight="bold" class="foreground">ls -</text><text x="88" textLength="8" class="background"> </text></g><g id="g7"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="40" font-weight="bold" class="foreground">ls -l</text><text x="96" textLength="8" class="background"> </text></g><g id="g8"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="40" font-weight="bold" class="foreground">ls -l</text></g><g id="g9"><text x="0" textLength="64" class="foreground">total 12</text></g><g id="g10"><text x="0" textLength="368" class="foreground">drwxr-xr-x 2 1000 1000 4096 Feb 14 01:58 input</text></g><g id="g11"><text x="0" textLength="376" class="foreground">drwxr-xr-x 2 root root 4096 Feb 14 01:57 output</text></g><g id="g12"><text x="0" textLength="360" class="foreground">drwxr-xr-x 2 root root 4096 Feb 14 01:58 repo</text></g></defs><g id="screen_view"><g><rect x="0" y="0" width="8" height="17" class="foreground"/><use xlink:href="#g1" y="0"/></g><g><rect x="56" y="272" width="8" height="17" class="foreground"/><use xlink:href="#g2" y="272"/></g><g><rect x="56" y="544" width="8" height="17" class="foreground"/><use xlink:href="#g2" y="544"/></g><g><rect x="56" y="816" width="8" height="17" class="foreground"/><use xlink:href="#g2" y="816"/></g><g><rect x="56" y="1088" width="8" height="17" class="foreground"/><use xlink:href="#g2" y="1088"/></g><g><rect x="56" y="1360" width="8" height="17" class="foreground"/><use xlink:href="#g2" y="1360"/></g><g><rect x="64" y="1632" width="8" height="17" class="foreground"/><use xlink:href="#g3" y="1632"/></g><g><rect x="72" y="1904" width="8" height="17" class="foreground"/><use xlink:href="#g4" y="1904"/></g><g><rect x="80" y="2176" width="8" height="17" class="foreground"/><use xlink:href="#g5" y="2176"/></g><g><rect x="88" y="2448" width="8" height="17" class="foreground"/><use xlink:href="#g6" y="2448"/></g><g><rect x="96" y="2720" width="8" height="17" class="foreground"/><use xlink:href="#g7" y="2720"/></g><g><rect x="96" y="2992" width="8" height="17" class="foreground"/><use xlink:href="#g7" y="2992"/></g><g><rect x="96" y="3264" width="8" height="17" class="foreground"/><use xlink:href="#g7" y="3264"/></g><g><rect x="96" y="3536" width="8" height="17" class="foreground"/><use xlink:href="#g7" y="3536"/></g><g><use xlink:href="#g8" y="3808"/><rect x="0" y="3825" width="8" height="17" class="foreground"/><use xlink:href="#g1" y="3825"/></g><g><use xlink:href="#g8" y="4080"/><use xlink:href="#g9" y="4097"/><use xlink:href="#g10" y="4114"/><use xlink:href="#g11" y="4131"/><use xlink:href="#g12" y="4148"/><rect x="0" y="4165" width="8" height="17" class="foreground"/><use xlink:href="#g1" y="4165"/></g></g></svg>
+        <rect class="background" height="100%" width="100%" x="0" y="0"/><defs><g id="g1"><text x="0" textLength="8" class="background"> </text></g><g id="g2"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="8" class="background"> </text></g><g id="g3"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="8" font-weight="bold" class="foreground">l</text><text x="64" textLength="8" class="background"> </text></g><g id="g4"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="16" font-weight="bold" class="foreground">ls</text><text x="72" textLength="8" class="background"> </text></g><g id="g5"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="24" font-weight="bold" class="foreground">ls </text><text x="80" textLength="8" class="background"> </text></g><g id="g6"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="32" font-weight="bold" class="foreground">ls -</text><text x="88" textLength="8" class="background"> </text></g><g id="g7"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="40" font-weight="bold" class="foreground">ls -l</text><text x="96" textLength="8" class="background"> </text></g><g id="g8"><text x="0" textLength="16" class="color2">&#10140; </text><text x="16" textLength="40" class="color6">home </text><text x="56" textLength="40" font-weight="bold" class="foreground">ls -l</text></g><g id="g9"><text x="0" textLength="56" class="foreground">total 4</text></g><g id="g10"><text x="0" textLength="360" class="foreground">drwxr-xr-x 3 root root 4096 Feb 14 02:58 repo</text></g></defs><g id="screen_view"><g><rect x="0" y="0" width="8" height="17" class="foreground"/><use xlink:href="#g1" y="0"/></g><g><rect x="56" y="272" width="8" height="17" class="foreground"/><use xlink:href="#g2" y="272"/></g><g><rect x="56" y="544" width="8" height="17" class="foreground"/><use xlink:href="#g2" y="544"/></g><g><rect x="56" y="816" width="8" height="17" class="foreground"/><use xlink:href="#g2" y="816"/></g><g><rect x="56" y="1088" width="8" height="17" class="foreground"/><use xlink:href="#g2" y="1088"/></g><g><rect x="56" y="1360" width="8" height="17" class="foreground"/><use xlink:href="#g2" y="1360"/></g><g><rect x="64" y="1632" width="8" height="17" class="foreground"/><use xlink:href="#g3" y="1632"/></g><g><rect x="72" y="1904" width="8" height="17" class="foreground"/><use xlink:href="#g4" y="1904"/></g><g><rect x="80" y="2176" width="8" height="17" class="foreground"/><use xlink:href="#g5" y="2176"/></g><g><rect x="88" y="2448" width="8" height="17" class="foreground"/><use xlink:href="#g6" y="2448"/></g><g><rect x="96" y="2720" width="8" height="17" class="foreground"/><use xlink:href="#g7" y="2720"/></g><g><rect x="96" y="2992" width="8" height="17" class="foreground"/><use xlink:href="#g7" y="2992"/></g><g><rect x="96" y="3264" width="8" height="17" class="foreground"/><use xlink:href="#g7" y="3264"/></g><g><rect x="96" y="3536" width="8" height="17" class="foreground"/><use xlink:href="#g7" y="3536"/></g><g><use xlink:href="#g8" y="3808"/><rect x="0" y="3825" width="8" height="17" class="foreground"/><use xlink:href="#g1" y="3825"/></g><g><use xlink:href="#g8" y="4080"/><use xlink:href="#g9" y="4097"/><use xlink:href="#g10" y="4114"/><rect x="0" y="4131" width="8" height="17" class="foreground"/><use xlink:href="#g1" y="4131"/></g></g></svg>
     <text id="timer" class="foreground">0:00/0:00</text>
     <!-- Invisible, wider track to make frame seeking easier -->
     <use xlink:href="#slider_wide_track" id="wide_track" class="background"/>
@@ -91,25 +94,25 @@
         var termtosvg_vars = {
             transforms: [
                 {transform: 'translate3D(0, 0px, 0)', easing: 'steps(1, end)'},
-{transform: 'translate3D(0, -272px, 0)', easing: 'steps(1, end)', offset: 0.000},
-{transform: 'translate3D(0, -544px, 0)', easing: 'steps(1, end)', offset: 0.016},
-{transform: 'translate3D(0, -816px, 0)', easing: 'steps(1, end)', offset: 0.024},
-{transform: 'translate3D(0, -1088px, 0)', easing: 'steps(1, end)', offset: 0.031},
-{transform: 'translate3D(0, -1360px, 0)', easing: 'steps(1, end)', offset: 0.039},
-{transform: 'translate3D(0, -1632px, 0)', easing: 'steps(1, end)', offset: 0.055},
-{transform: 'translate3D(0, -1904px, 0)', easing: 'steps(1, end)', offset: 0.062},
-{transform: 'translate3D(0, -2176px, 0)', easing: 'steps(1, end)', offset: 0.070},
-{transform: 'translate3D(0, -2448px, 0)', easing: 'steps(1, end)', offset: 0.078},
-{transform: 'translate3D(0, -2720px, 0)', easing: 'steps(1, end)', offset: 0.101},
-{transform: 'translate3D(0, -2992px, 0)', easing: 'steps(1, end)', offset: 0.109},
-{transform: 'translate3D(0, -3264px, 0)', easing: 'steps(1, end)', offset: 0.117},
-{transform: 'translate3D(0, -3536px, 0)', easing: 'steps(1, end)', offset: 0.124},
-{transform: 'translate3D(0, -3808px, 0)', easing: 'steps(1, end)', offset: 0.140},
-{transform: 'translate3D(0, -4080px, 0)', easing: 'steps(1, end)', offset: 0.140},
+{transform: 'translate3D(0, -272px, 0)', easing: 'steps(1, end)', offset: 0.010},
+{transform: 'translate3D(0, -544px, 0)', easing: 'steps(1, end)', offset: 0.079},
+{transform: 'translate3D(0, -816px, 0)', easing: 'steps(1, end)', offset: 0.113},
+{transform: 'translate3D(0, -1088px, 0)', easing: 'steps(1, end)', offset: 0.146},
+{transform: 'translate3D(0, -1360px, 0)', easing: 'steps(1, end)', offset: 0.180},
+{transform: 'translate3D(0, -1632px, 0)', easing: 'steps(1, end)', offset: 0.248},
+{transform: 'translate3D(0, -1904px, 0)', easing: 'steps(1, end)', offset: 0.282},
+{transform: 'translate3D(0, -2176px, 0)', easing: 'steps(1, end)', offset: 0.316},
+{transform: 'translate3D(0, -2448px, 0)', easing: 'steps(1, end)', offset: 0.350},
+{transform: 'translate3D(0, -2720px, 0)', easing: 'steps(1, end)', offset: 0.452},
+{transform: 'translate3D(0, -2992px, 0)', easing: 'steps(1, end)', offset: 0.486},
+{transform: 'translate3D(0, -3264px, 0)', easing: 'steps(1, end)', offset: 0.520},
+{transform: 'translate3D(0, -3536px, 0)', easing: 'steps(1, end)', offset: 0.554},
+{transform: 'translate3D(0, -3808px, 0)', easing: 'steps(1, end)', offset: 0.622},
+{transform: 'translate3D(0, -4080px, 0)', easing: 'steps(1, end)', offset: 0.624},
 {transform: 'translate3D(0, -4080px, 0)', easing: 'steps(1, end)'}
             ],
             timings: {
-                duration: 11632,
+                duration: 2657,
                 iterations: Infinity
             }
         };]]></script>
@@ -118,10 +121,16 @@ var animation = document.getElementById("screen_view").animate(
     termtosvg_vars.transforms,
     termtosvg_vars.timings
 )
+
 var terminal   = document.getElementById('terminal')
 var play_button = terminal.getElementById('play-button');
 var pause_button = terminal.getElementById('pause-button');
-var is_playing = true;
+var is_playing = false;
+
+// Immediately pause the animation
+animation.pause();
+play_button.setAttribute('display', 'inline')
+pause_button.setAttribute('display', 'none')
 
 animation.onfinish = function() {
   play_button.setAttribute('display', 'inline')
