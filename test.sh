@@ -3,7 +3,7 @@
 ########################
 # include the magic
 ########################
-. ./demo-magic/demo-magic.sh
+. /tmp/demo-magic/demo-magic.sh
 
 DEMO_PROMPT="${GREEN}➜ ${CYAN}\W ${COLOR_RESET}"
 TYPE_SPEED=10
